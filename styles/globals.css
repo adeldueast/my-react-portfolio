@@ -32,6 +32,8 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -46,6 +48,9 @@ section {
   margin: 0 auto 200px auto;
 }
 
+span {
+  color: var(--green);
+}
 .button {
   font-family: var(--font-mono);
   color: var(--lightest-slate);

@@ -21,7 +21,7 @@ const About = () => {
 
         <div className={styles.description}>
           Hello! My name is Adel Kouaou and I am studying computer-science at 
-          {' '}<a href="https://www.cegepmontpetit.ca/">Cegep Edouard-montpetit</a>.
+         <span> <a href="https://www.cegepmontpetit.ca/"> Cegep&nbsp;Edouard-montpetit</a></span>.
           My interest in software development started when I realised I enjoy
           creating & troubleshooting things in general, turns out coding fits
           the description perfectly! Outside of coding, I also love gaming and
@@ -39,7 +39,7 @@ const About = () => {
           framework and this is why I built this portfolio with pure css. I
           would also like to mention that all the credits for this amazing
           design goes to
-          <a href="https://github.com/bchiang7">Britanny Chiang</a>. Finally, I
+         <span> <a href="https://github.com/bchiang7"> Britanny&nbsp;Chiang</a></span>. Finally, I
           think its amazing to think of something and being able to bring it to
           life just by googling it.
           <br />
