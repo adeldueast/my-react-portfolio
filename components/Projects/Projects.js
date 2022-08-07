@@ -2,7 +2,6 @@ import { projects } from "./constants";
 import styles from "./Projects.module.css";
 
 const Projects = () => {
-  ;
 
   return (
     <section>

@@ -24,8 +24,9 @@ export default function Home() {
         <Header />
         <About />
         <Projects />
+        <Contact />
       </Layout>
-      
+      <Footer/>
      
     </div>
   );
