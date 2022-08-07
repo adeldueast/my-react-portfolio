@@ -1,13 +1,25 @@
 import Image from 'next/image'
 import styles from './About.module.css'
 
+
 const About = () => {
+
+  const skills = [
+    'C# .NET',
+    'SQL Server',
+    'JavaScript (ES6)',
+    'TypeScript',
+    'Angular',
+    'React',
+    'Dart (Flutter)'
+  ]
+
   return (
     <section className={styles.about}>
-      <h2 className={styles['about-title']}>About Me</h2>
-      <div className={styles['about-content']}>
+      <h2 className={styles.title}>About Me</h2>
+      <div className={styles.content}>
 
-        <div className={styles['about-description']}>
+        <div className={styles.description}>
           Hello! My name is Adel Kouaou and I am studying computer-science at 
           {' '}<a href="https://www.cegepmontpetit.ca/">Cegep Edouard-montpetit</a>.
           My interest in software development started when I realised I enjoy
@@ -33,31 +45,22 @@ const About = () => {
           <br />
           <br />
           <p>Here are a few technologies I’ve been working with recently:</p>
-          <ul className={styles['skills-ul']}>
-            <li>C# (.NET)</li>
-            <li>JavaScript</li>
-            <li>Dart (Flutter)</li>
-            <li>Node.js</li>
-            <li>Java</li>
+          <ul className={styles.skills}>
+            {skills.map((skill,i)=>(<li key={i}>{skill}</li>))}
           </ul>
         </div>
 
-        <div className={styles['about-img']}>
 
-          <div className={styles['about-wrapper']}> 
-            <Image  
-            src="/images/pfp.jpg" 
-            alt="profile photo" 
-            width='100%'
-            height='100%'
-            layout='fill' 
-            objectFit='cover'/>
+        {/* TODO: try to use Next.Js optimized Image component instead */}
+        <div className={styles.image}>
+          <div className={styles.img} > 
+           <img src="images/pfp.png" alt="dsadas" />
           </div>
-          
         </div>
-      </div>
 
+      </div>
     </section>
+    
   );
 };
 
