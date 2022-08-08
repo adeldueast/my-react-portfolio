@@ -6,45 +6,38 @@ const About = () => {
 
   const skills = [
     'C# .NET',
+    'React',
     'SQL Server',
     'JavaScript (ES6)',
-    'TypeScript',
     'Angular',
-    'React',
-    'Dart (Flutter)'
+    'TypeScript',
+    // 'Dart (Flutter)',
+   
+    
   ]
 
   return (
-    <section className={styles.about}>
+    <section id='about' className={styles.about}>
       <h2 className={styles.title}>About Me</h2>
       <div className={styles.content}>
 
         <div className={styles.description}>
-          Hello! My name is Adel Kouaou and I am studying computer-science at 
+          Hello, my name is Adel Kouaou and I am studying computer-science at 
          <span> <a href="https://www.cegepmontpetit.ca/"> Cegep&nbsp;Edouard-montpetit</a></span>.
           My interest in software development started when I realised I enjoy
           creating & troubleshooting things in general, turns out coding fits
           the description perfectly! Outside of coding, I also love gaming and
           the competitive side of it. The satisfaction of growing as a player
           and the sense of contributing to a team and community are the reasons
-          im passionned by Gaming. Learning programming would also allow me to
-          create my own game if I ever wish to.
+          im passionned by gaming.
           <br />
           <br />
-          My main focus these days is learning and bulding things I enjoy. This
-          being said, I think I’ve always had a slight preference for back-end
-          in general, but I’ve recently had a itch to learn front-end starting
-          with the core fundamentals.. CSS. I think understanding css
-          fundamentals is important before jumping into any type of front-end
-          framework and this is why I built this portfolio with pure css. I
-          would also like to mention that all the credits for this amazing
-          design goes to
-         <span> <a href="https://github.com/bchiang7"> Britanny&nbsp;Chiang</a></span>. Finally, I
-          think its amazing to think of something and being able to bring it to
-          life just by googling it.
+          In my free time I put a lot of effort into creating my own projects in an attempt to expand my knowledge in this domain.
+          I thrive in a team environment and am equally productive when given a task to complete on my own. My main focus these days
+          is to keep learning and stay up to date with the newest technologies.
           <br />
           <br />
-          <p>Here are a few technologies I’ve been working with recently:</p>
+          <p>Here are a few ones I’ve been working with recently:</p>
           <ul className={styles.skills}>
             {skills.map((skill,i)=>(<li key={i}>{skill}</li>))}
           </ul>
