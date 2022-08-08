@@ -68,6 +68,7 @@
   justify-content: flex-start;
   align-items: center;
   column-gap: 1.6rem;
+  row-gap: 0.5rem;
   /* white-space: nowrap; */
 }
 .projects-content > ul {
@@ -77,6 +78,8 @@
   justify-content: flex-end;
   align-items: center;
   column-gap: 1.6rem;
+  row-gap: 0.5rem;
+
 
   /* white-space: nowrap; */
 }
