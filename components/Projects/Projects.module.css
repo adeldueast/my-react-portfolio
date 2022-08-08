@@ -1,0 +1,220 @@
+.projects-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  /* margin bottom  */
+  margin: 0 0 3rem;
+  width: 100%;
+  color: var(--lightest-slate);
+  font-family: var(--font-sans);
+  font-size: 2rem;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.projects-title::before {
+  /*!! a etudier  !!*/
+  counter-increment: section 2;
+  content: "0" counter(section) ".";
+  /*!! a etudier  !!*/
+  margin-right: 0.5rem;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.projects-title::after {
+  content: "";
+  width: 300px;
+  height: 1px;
+  margin-left: 1.5rem;
+  background-color: var(--lightest-navy);
+}
+
+.projects > li {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.5rem;
+  min-height: 400px;
+  margin-bottom: 1.5rem;
+}
+
+.projects :nth-child(2n) .projects-img {
+  grid-area: 1/6/1/13;
+}
+
+.projects :nth-child(2n) .projects-content {
+  grid-area: 1/1/1/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.projects :nth-child(2n) .projects-content > ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.projects-img {
+  grid-area: 1/1/1/8;
+  position: relative;
+}
+/* TODO: make this cursos pointer when adding blog to projects */
+
+.projects-img img {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 20px 30px -10px var(--navy-shadow);
+}
+
+.projects-content {
+  grid-area: 1/7/1/13;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  /* position: relative;
+  top: -60px;
+  min-width: 300px; */
+}
+
+.projects-content > p {
+  font-family: var(--font-mono);
+  color: var(--green);
+  font-size: 0.8rem;
+}
+
+.projects-content > h3 {
+  font-family: var(--font-sans);
+  color: var(--lightest-slate);
+  font-size: 1.5rem;
+}
+
+.projects-content-box {
+
+  font-family: var(--font-sans);
+
+  font-size: 1rem;
+  padding: 2rem;
+  background-color: var(--light-navy);
+
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  position: relative;
+
+  border-radius: 4px;
+
+  color: var(--light-slate);
+  font-size: 0.9rem;
+}
+
+.projects-content > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  white-space: nowrap;
+}
+
+.projects-content > ul li {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--slate);
+}
+
+.projects-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  z-index: 100;
+}
+.projects-links svg {
+  width: 25px;
+  color: var(--light-slate);
+}
+.projects-links svg:hover {
+  color: var(--green);
+}
+
+@media (max-width: 1080px) {
+}
+
+@media (max-width: 768px) {
+  .projects > li {
+    margin-bottom: 2.5rem;
+  }
+  .projects-title,
+  .projects-title::before {
+    font-size: 1.5rem;
+  }
+
+  .projects-title,
+  .projects-title::before {
+    font-size: 1.5rem;
+  }
+  .projects {
+    border-radius: 4px;
+  }
+  .projects-img,
+  .projects :nth-child(2n) .projects-img {
+    grid-area: 1/1/1/13;
+  }
+
+  .projects-img img {
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    filter: grayscale(100%) contrast(1) brightness(50%);
+    mix-blend-mode: multiply;
+  }
+
+  .projects-img a::before {
+    border-radius: 4px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    /* TODO: this interfered with the link redirect  */
+    z-index: 2;
+    transition: var(--transition);
+    background-color: var(--navy);
+    mix-blend-mode: screen;
+  }
+
+  .projects-content,
+  .projects :nth-child(2n) .projects-content {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: 1/1/1/13;
+    z-index: 2;
+  }
+  .projects-content-box {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-title,
+  .projects-title::before {
+    font-size: 1.3rem;
+  }
+
+  .projects-content-box {
+    max-height: 120px;
+    overflow-y: auto;
+  }
+}

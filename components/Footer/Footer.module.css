@@ -1,0 +1,38 @@
+.footer {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--slate);
+  font-family: var(--font-mono);
+  padding-bottom: 20px;
+  font-size: 0.86rem;
+}
+
+.footer a {
+  color: var(--green);
+  white-space: nowrap;
+}
+.footer p {
+  display: inline-block;
+}
+
+/*  */
+
+.left-side {
+  background: var(--navy);
+  position: fixed;
+  width: 8%;
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.right-side {
+  position: fixed;
+  right: 0;
+  width: 8%;
+  height: 100vh;
+  font-family: var(--font-mono);
+}

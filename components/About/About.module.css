@@ -1,0 +1,132 @@
+.about {
+  background: var(--navy);
+  max-width: 1000px;
+  font-family: var(--font-sans);
+}
+
+.title {
+  display: flex;
+  
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  /* margin bottom  */
+  margin: 0 0 3rem;
+  width: 100%;
+  color: var(--lightest-slate);
+
+  font-size: 2rem;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.title::before {
+  /*!! a etudier  !!*/
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  /*!! a etudier  !!*/
+  margin-right: 1rem;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 1px;
+  margin-left: 1.5rem;
+  background-color: var(--lightest-navy);
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  color: var(--slate);
+  line-height: 1.3;
+  font-size: 1rem;
+}
+.description {
+  flex: 2;
+}
+
+.image {
+  min-width: 240px;
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image img{
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+ 
+}
+
+/* .description a {
+  color: var(--green);
+} */
+
+
+
+.skills {
+  font-family: var(--font-mono);
+  padding: 0;
+  display: grid;
+  /**  a etudier **/
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  column-gap: 10px;
+  margin-top: 20px;
+  list-style: none;
+  font-size: 0.9rem;
+  overflow-x: auto;
+}
+
+.skills li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+}
+
+.skills li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--green);
+  line-height: 18px;
+}
+
+@media (max-width: 768px) {
+
+  .content {
+    flex-direction: column-reverse;
+  }
+  .image {
+    
+    align-self: center;
+  }
+  .image img{
+    max-width:  240px;
+  }
+  .title{
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  .image img{
+    max-width:  240px;
+  }
+  .title,
+  .title::before {
+    font-size: 1.3rem;
+  }
+}
