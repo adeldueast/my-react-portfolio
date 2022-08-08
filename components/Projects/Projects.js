@@ -5,7 +5,7 @@ const Projects = () => {
 
   return (
     <section>
-      <h2 className={styles["projects-title"]}>Some Things I've Built</h2>
+      <h2 className={styles["projects-title"]}>Some Things I’ve Built</h2>
 
       <ul className={styles.projects}>
         {projects.map((project, index) => (

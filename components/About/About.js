@@ -32,7 +32,7 @@ const About = () => {
           <br />
           <br />
           My main focus these days is learning and bulding things I enjoy. This
-          being said, I think I've always had a slight preference for back-end
+          being said, I think I’ve always had a slight preference for back-end
           in general, but I’ve recently had a itch to learn front-end starting
           with the core fundamentals.. CSS. I think understanding css
           fundamentals is important before jumping into any type of front-end

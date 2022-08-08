@@ -17,7 +17,7 @@ export const projects = [
 
   {
     title: "Rust Recoil",
-    description: (<p>A minimal console application that controls weapon's recoil with a 1ms precision. It includes customizable features as custom keybinds and custom configuration to make it look realistic. Vanguard is also very lightweight as it takes less than 1% cpu usage." <br /><span>For educational purposes only *</span> </p>),
+    description: (<p>A minimal console application that controls weapon’s recoil with a 1ms precision. It includes customizable features as custom keybinds and custom configuration to make it look realistic. Vanguard is also very lightweight as it takes less than 1% cpu usage. <br /><span>For educational purposes only *</span> </p>),
     image: "rust-recoil.png",
     technologies: ["C#", ".NET", "Auth.gg API"],
     links: [
