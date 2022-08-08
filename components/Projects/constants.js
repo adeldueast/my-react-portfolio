@@ -4,7 +4,7 @@ export const projects = [
     title: "Childcare Management",
     description: (<p>
     A web app that allows you to manage children. Invite users (staff or guardians) and assign them to a group or children. Create daily attendance/absence,
-    logbook (journal) and add photos to child's galleries with the posibility of tagging other childs in the photo. Real-time data updates and notifications. 
+    logbook (journal) and add photos to child&apos;s galleries with the posibility of tagging other childs in the photo. Real-time data updates and notifications. 
     Back-end & front-end  made from scratch.
     </p>),
     image: "childcare-app.png",
