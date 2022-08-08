@@ -2,7 +2,6 @@ import styles from "./Side.module.css";
 import Socials from "./../Socials/Socials";
 
 const Side = (props) => {
-  console.warn(props);
   return (
     <div
       className={`

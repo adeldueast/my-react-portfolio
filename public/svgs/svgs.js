@@ -19,7 +19,7 @@ export const svgs = {
   youtube: (
     <svg
       aria-hidden="true"
-      focusable="true"   
+      focusable="true"
       data-prefix="fab"
       data-icon="youtube"
       className="svg-inline--fa fa-youtube fa-w-18"

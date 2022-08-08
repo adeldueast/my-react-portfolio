@@ -2,20 +2,20 @@ import styles from "./Socials.module.css";
 import { svgs } from "../../public/svgs/svgs";
 
 const Socials = (props) => {
-  console.warn(props)
+
   return (
-    <ul class={`${styles.socials} ${props.direction == 'vertical' ? styles.column : styles.row}`}>
+    <ul className={`${styles.socials} ${props.direction == 'vertical' ? styles.column : styles.row}`}>
       <li>
-        <a href="#">{svgs.github}</a>
+        <a href="https://github.com/adeldueast">{svgs.github}</a>
       </li>
       <li>
-        <a href="#">{svgs.instagram}</a>
+        <a href="https://www.instagram.com/aka.adel">{svgs.instagram}</a>
       </li>
       <li>
         <a href="#">{svgs.twitter}</a>
       </li>
       <li>
-        <a href="#">{svgs.linkedIn}</a>
+        <a href="https://ca.linkedin.com/in/adel-kouaou-b219571b8">{svgs.linkedIn}</a>
       </li>
     </ul>
   );
