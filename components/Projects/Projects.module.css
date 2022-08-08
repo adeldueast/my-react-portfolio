@@ -13,6 +13,7 @@
   white-space: nowrap;
 }
 
+
 .projects-title::before {
   /*!! a etudier  !!*/
   counter-increment: section 2;
@@ -33,6 +34,11 @@
   background-color: var(--lightest-navy);
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 .projects > li {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -56,9 +62,32 @@
 }
 
 .projects :nth-child(2n) .projects-content > ul {
+  max-width: 84.5%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 1.5rem;
+  align-items: center;
+  column-gap: 1.6rem;
+  row-gap: 0.5rem;
+  /* white-space: nowrap; */
+}
+.projects-content > ul {
+  max-width: 84.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 1.6rem;
+  row-gap: 0.5rem;
+
+
+  /* white-space: nowrap; */
+}
+
+.projects-content > ul li {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--slate);
 }
 
 .projects-img {
@@ -117,18 +146,7 @@
   font-size: 0.9rem;
 }
 
-.projects-content > ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1.5rem;
-  white-space: nowrap;
-}
 
-.projects-content > ul li {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--slate);
-}
 
 .projects-links {
   display: flex;
@@ -162,6 +180,7 @@
   }
   .projects {
     border-radius: 4px;
+
   }
   .projects-img,
   .projects :nth-child(2n) .projects-img {
@@ -205,6 +224,20 @@
     background: transparent;
     box-shadow: none;
   }
+
+  .projects-content > ul {
+
+    max-width: 100%;
+    justify-content: flex-start;
+  
+  
+    /* white-space: nowrap; */
+  }
+  .projects-content-box {
+    max-height: 120px;
+    overflow-y: auto;
+    
+  }
 }
 
 @media (max-width: 480px) {
@@ -213,8 +246,5 @@
     font-size: 1.3rem;
   }
 
-  .projects-content-box {
-    max-height: 120px;
-    overflow-y: auto;
-  }
+ 
 }

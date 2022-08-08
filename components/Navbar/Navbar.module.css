@@ -8,6 +8,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+      /* background-color: rgba(10, 25, 47, 0.85);
+    box-shadow: 0 10px 30px -10px var(--navy-shadow); */
 }
 
 .logo {

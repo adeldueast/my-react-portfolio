@@ -12,7 +12,7 @@ const Socials = (props) => {
         <a href="https://www.instagram.com/aka.adel">{svgs.instagram}</a>
       </li>
       <li>
-        <a href="#">{svgs.twitter}</a>
+        <a >{svgs.twitter}</a>
       </li>
       <li>
         <a href="https://ca.linkedin.com/in/adel-kouaou-b219571b8">{svgs.linkedIn}</a>

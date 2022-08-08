@@ -4,7 +4,7 @@ import styles from "./Projects.module.css";
 const Projects = () => {
 
   return (
-    <section>
+    <section id='projects'>
       <h2 className={styles["projects-title"]}>Some Things I’ve Built</h2>
 
       <ul className={styles.projects}>

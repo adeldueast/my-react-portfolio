@@ -29,6 +29,10 @@
   color: var(--lightest-slate);
 }
 
+.side > a:hover{
+  color: var(--green);
+}
+
 .left {
   left: 40px;
   bottom: 0px;
