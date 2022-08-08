@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 0.5rem;
-  height: 400px;
+  min-height: 400px;
   margin-bottom: 1.5rem;
 }
 
@@ -100,6 +100,7 @@
 }
 
 .projects-content-box {
+
   font-family: var(--font-sans);
 
   font-size: 1rem;
@@ -155,7 +156,6 @@
     font-size: 1.5rem;
   }
 
-
   .projects-title,
   .projects-title::before {
     font-size: 1.5rem;
@@ -205,12 +205,16 @@
     background: transparent;
     box-shadow: none;
   }
- 
 }
 
 @media (max-width: 480px) {
   .projects-title,
   .projects-title::before {
     font-size: 1.3rem;
+  }
+
+  .projects-content-box {
+    max-height: 120px;
+    overflow-y: auto;
   }
 }

@@ -2,7 +2,7 @@ export const svgs = {
   github: (
     <svg
       aria-hidden="true"
-      focusable="false"
+      focusable="true"
       data-prefix="fab"
       data-icon="github"
       className="svg-inline--fa fa-github fa-w-16"
@@ -19,7 +19,7 @@ export const svgs = {
   youtube: (
     <svg
       aria-hidden="true"
-      focusable="false"
+      focusable="true"   
       data-prefix="fab"
       data-icon="youtube"
       className="svg-inline--fa fa-youtube fa-w-18"
@@ -36,7 +36,7 @@ export const svgs = {
   deployed: (
     <svg
       aria-hidden="true"
-      focusable="false"
+      focusable="true"
       data-prefix="fas"
       data-icon="share-square"
       className="svg-inline--fa fa-share-square fa-w-18"
@@ -53,7 +53,7 @@ export const svgs = {
   instagram: (
     <svg
       aria-hidden="true"
-      focusable="false"
+      focusable="true"
       data-prefix="fab"
       data-icon="instagram"
       className="svg-inline--fa fa-instagram fa-w-14"
@@ -70,7 +70,7 @@ export const svgs = {
   twitter: (
     <svg
       aria-hidden="true"
-      focusable="false"
+      focusable="true"
       data-prefix="fab"
       data-icon="twitter"
       className="svg-inline--fa fa-twitter fa-w-16"
@@ -87,7 +87,7 @@ export const svgs = {
   linkedIn: (
     <svg
       aria-hidden="true"
-      focusable="false"
+      focusable="true"
       data-prefix="fab"
       data-icon="linkedin-in"
       className="svg-inline--fa fa-linkedin-in fa-w-14"
