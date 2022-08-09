@@ -12,7 +12,7 @@ const Footer = () => {
 
       <p>
         All credit goes to
-        <a href="https://github.com/bchiang7" target="_blank" rel="noopener" > Brittanny Chiang</a> for the
+        <a href="https://github.com/bchiang7" target="_blank" rel="noreferrer" > Brittanny Chiang</a> for the
         design
       </p>
     </footer>
