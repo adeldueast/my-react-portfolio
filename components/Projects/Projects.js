@@ -31,9 +31,9 @@ const Projects = () => {
                 ))}
               </ul>
 
-              <div className={styles["projects-links"]}>
+              <div className={styles["projects-links"]} >
                 {project.links.map((link, index) => (
-                  <a key={`project-links-${index}`}  href={link.redirect}>{link.svg}</a>
+                  <a key={`project-links-${index}`} title={link.tooltip}  href={link.redirect} target="_blank" >{link.svg}</a>
                 ))}
               </div>
             </div>
