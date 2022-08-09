@@ -33,7 +33,7 @@ const Projects = () => {
 
               <div className={styles["projects-links"]} >
                 {project.links.map((link, index) => (
-                  <a key={`project-links-${index}`} title={link.tooltip}  href={link.redirect} target="_blank" >{link.svg}</a>
+                  <a key={`project-links-${index}`} title={link.tooltip}  href={link.redirect} target="_blank" rel="noopener" >{link.svg}</a>
                 ))}
               </div>
             </div>
