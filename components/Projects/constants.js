@@ -45,6 +45,32 @@ export const projects = [
     featuredTitle: "Featured Project",
   },
   {
+    title: "Spotify Artist Tracker",
+    description: (
+      <p >
+        A web app that allow you keeping track of your favorite artists on Spotify. View
+        all their albums, tracks & featuring, incoming concerts and play their audio samples. Test application with email: <span>adel.kouaou.test@outlook.com</span>  password: <span>Password123$</span>
+      </p>
+    ),
+    image: "spotify-app.png",
+    technologies: ["Angular", "Spotify API", "Bandsintown API", "Goggle Map"],
+    links: [
+      {
+        tooltip: "Repository",
+        svg: svgs.github,
+        redirect:
+          "https://github.com/adeldueast/Super-Musique-Infinie-Spotify-API",
+      },
+      {
+        tooltip: "Deployed Application",
+        svg: svgs.deployed,
+        redirect:
+          "https://visionary-lamington-1d48e0.netlify.app",
+      }
+    ],
+    featuredTitle: "",
+  },
+  {
     title: "Rust Anti-Recoil",
     description: (
       <p>
@@ -72,27 +98,7 @@ export const projects = [
     ],
     featuredTitle: "Featured Project",
   },
-  {
-    title: "Spotify Artist Tracker",
-    description: (
-      <p>
-        A web app for keeping track of your favorite artists on Spotify. View
-        all their albums, tracks, incoming concerts and play any tracks audio
-        sample.
-      </p>
-    ),
-    image: "spotify-app.png",
-    technologies: ["Angular", "Spotify API", "Bandsintown API", "Goggle Map"],
-    links: [
-      {
-        tooltip: "Repository",
-        svg: svgs.github,
-        redirect:
-          "https://github.com/adeldueast/Super-Musique-Infinie-Spotify-API",
-      },
-    ],
-    featuredTitle: "",
-  },
+
   {
     title: "Web Crawler",
     description: (
