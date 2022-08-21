@@ -96,6 +96,32 @@ export const projects = [
     featuredTitle: "Featured Project",
   },
   {
+    title: "Disney Clone",
+    description: (
+      <p > 
+       A Disney clone web app that list popular/top rated movies using The Movie Database (TMDB) API. To take full advantage Next.js, every pages are server-side rendered. Images are lazy-loaded on scrolls and it is possible to preview a movie/serie trailers.
+      </p>
+    ),
+    image: "disney-clone.png",
+    technologies: ["React", "Next.js", "NextAuth.js", "Firebase-authentication", "Firebase-firestore", "The Movie Database (TMDB) API" , "Tailwind CSS"],
+    links: [
+      {
+        tooltip: "Repository",
+        svg: svgs.github,
+        redirect:
+          "https://github.com/adeldueast/disney-clone",
+      },
+      {
+        tooltip: "Deployed Application",
+        svg: svgs.deployed,
+        redirect:
+          "https://disn3y-clone.netlify.app/",
+      }
+    ],
+    featuredTitle: "Featured Project",
+  },
+
+  {
     title: "Rust Anti-Recoil",
     description: (
       <p>
