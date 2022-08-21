@@ -49,11 +49,11 @@ export const projects = [
     description: (
       <p >
         A web app that allow you keeping track of your favorite artists on Spotify. View
-        all their albums, tracks & featuring, incoming concerts and play their audio samples. Test application with email: <span>adel.kouaou.test@outlook.com</span>  password: <span>Password123$</span>
+        all their albums, tracks & featuring, incoming concerts and play their audio samples. <span>Test application with following account.  Email: adel.kouaou.test@outlook.com Password: Password123$</span>
       </p>
     ),
     image: "spotify-app.png",
-    technologies: ["Angular", "Spotify API", "Bandsintown API", "Goggle Map"],
+    technologies: ["Angular", "Spotify API", "Bandsintown API", "Goggle Map","Tailwind CSS"],
     links: [
       {
         tooltip: "Repository",
@@ -68,7 +68,32 @@ export const projects = [
           "https://visionary-lamington-1d48e0.netlify.app",
       }
     ],
-    featuredTitle: "",
+    featuredTitle: "Featured Project",
+  },
+  {
+    title: "Airline Reviews",
+    description: (
+      <p >
+        Web app that let you post real-time reviews by signin in with ur google account. To take advantage of the benefits that Next.js offers, certain pages uses server-side rendering while others are client-side rendered. <span>This web app was focused on web functionalities over aesthetics</span>.
+      </p>
+    ),
+    image: "airline-reviews2.png",
+    technologies: ["React", "Next.js", "Firebase-authentication", "Firebase-firestore"],
+    links: [
+      {
+        tooltip: "Repository",
+        svg: svgs.github,
+        redirect:
+          "https://github.com/adeldueast/Airline-Review",
+      },
+      {
+        tooltip: "Deployed Application",
+        svg: svgs.deployed,
+        redirect:
+          "https://airline-review-app.netlify.app/airlines/Qyuih89ZKQtSB8sAHu32",
+      }
+    ],
+    featuredTitle: "Featured Project",
   },
   {
     title: "Rust Anti-Recoil",
