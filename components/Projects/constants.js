@@ -18,7 +18,7 @@ export const projects = [
       "Angular",
       "Material",
       "SQL-SERVER",
-      "Entity Framework",
+      "Entity Framework Core",
       "Heroku",
       "BackBlaze Buckets",
       "SignalR (Websocket)",
@@ -53,7 +53,7 @@ export const projects = [
       </p>
     ),
     image: "spotify-app.png",
-    technologies: ["Angular", "Spotify API", "Bandsintown API", "Goggle Map","Tailwind CSS"],
+    technologies: ["Angular", "Spotify API", "Bandsintown API", "Google Map","Tailwind CSS"],
     links: [
       {
         tooltip: "Repository",

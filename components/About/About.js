@@ -1,16 +1,18 @@
-import Image from 'next/image'
 import styles from './About.module.css'
 
 
 const About = () => {
 
   const skills = [
-    'C# .NET',
-    'React',
+    'C# - .NET',
+    'Java - Spring Boot',
+    'React - Next.js',
     'SQL Server',
-    'JavaScript (ES6)',
+    'JavaScript',
     'Angular',
     'TypeScript',
+    'Firebase',
+  
     // 'Dart (Flutter)',
    
     
